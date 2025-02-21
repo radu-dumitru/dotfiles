@@ -1,0 +1,42 @@
+* {
+ background: rgba(45, 48, 59, 100%);
+ foreground: rgba(196, 203, 212, 100%);
+ selected-normal-background: rgba(64, 132, 214, 100%);
+ selected-normal-foreground: rgba(249, 249, 249, 100%);
+ alternate-normal-background: rgba(64, 69, 82, 59%);
+}
+
+window {
+ background-color: var(background);
+}
+
+listview {
+ border: 0px;
+}
+
+element.normal.normal {
+ background-color: var(background);
+ text-color: var(foreground); 
+}
+
+element.selected.normal {
+ background-color: var(selected-normal-background);
+ text-color: var(selected-normal-foreground);
+}
+
+element.alternate.normal {
+ background-color: var(alternate-normal-background);
+ text-color: var(foreground);
+}
+
+inputbar {
+ text-color: var(foreground);
+}
+
+entry {
+ text-color: var(foreground);
+}
+
+prompt {
+ text-color: var(foreground);
+}
