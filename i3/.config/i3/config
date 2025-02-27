@@ -200,6 +200,6 @@ client.focused          #4c7899 #285577 #ffffff #474c67   #474c67
 
 floating_maximum_size 800x600
 
-exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpapers/ubuntu.png
+exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpapers/debian-infinite.png
 
 
