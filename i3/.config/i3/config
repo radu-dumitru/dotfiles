@@ -207,4 +207,6 @@ floating_maximum_size 800x600
 
 exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpapers/debian-infinite.png
 
-
+# swap caps lock with tab
+exec --no-startup-id xmodmap -e "keycode 66 = Tab ISO_Left_Tab Tab ISO_Left_Tab"
+exec --no-startup-id xmodmap -e "keycode 23 = Caps_Lock NoSymbol Caps_Lock"
