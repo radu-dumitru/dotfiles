@@ -199,8 +199,8 @@ bindsym $mod+Ctrl+Shift+s exec --no-startup-id systemctl suspend
 
 bindsym $mod+o exec --no-startup-id "rofi -show run"
 
-bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +2%
-bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 2%-
+bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +1%
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 1%-
 
 # hide the title bar in normal mode
 for_window [class="^.*"] border pixel 3
