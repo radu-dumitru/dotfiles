@@ -13,7 +13,7 @@ set $mod Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:monospace 8
+font pango:Roboto 12
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -45,8 +45,8 @@ exec --no-startup-id nm-applet
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% && $refresh_i3status
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
@@ -202,14 +202,21 @@ bindsym $mod+o exec --no-startup-id "rofi -show run"
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +2%
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 2%-
 
+# hide the title bar in normal mode
 for_window [class="^.*"] border pixel 3
 
+# enable window icons for all windows
+for_window [all] title_window_icon on
+
+# enable window icons for all windows with extra horizontal padding
+for_window [all] title_window_icon padding 3px
+
 # class                 border  backgr. text    indicator child_border
-client.focused          #4c7899 #285577 #ffffff #474c67   #474c67
+client.focused          #474c67 #474c67 #ffffff #474c67   #474c67
 
 floating_maximum_size 800x600
 
-exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpapers/debian-infinite.png
+exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpapers/F29_wallpaper.png
 
 # swap caps lock with tab
 exec --no-startup-id xmodmap -e "keycode 66 = Tab ISO_Left_Tab Tab ISO_Left_Tab"
