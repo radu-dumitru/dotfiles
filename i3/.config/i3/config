@@ -36,7 +36,7 @@ exec_always --no-startup-id xset s noblank
 # exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --color=2d303b --nofork 
 
 # Create a lockscreen image by using the convert command: convert source-image.png -resize 1366x768^ -gravity center -extent 1366x768 lockscreen.png
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --image ~/Pictures/wallpapers/lockscreen.png --nofork 
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --image ~/.config/i3/lockscreen.png --nofork 
 
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
@@ -216,7 +216,7 @@ client.focused          #474c67 #474c67 #ffffff #474c67   #474c67
 
 floating_maximum_size 800x600
 
-exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpapers/F29_wallpaper.png
+exec_always --no-startup-id feh --bg-scale ~/.config/i3/wallpaper.png
 
 # swap caps lock with tab
 exec --no-startup-id xmodmap -e "clear Lock"
