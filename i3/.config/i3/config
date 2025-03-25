@@ -212,7 +212,7 @@ for_window [all] title_window_icon on
 for_window [all] title_window_icon padding 3px
 
 # class                 border  backgr. text    indicator child_border
-client.focused          #474c67 #474c67 #ffffff #474c67   #474c67
+client.focused          #8b91ab #8b91ab #ffffff #8b91ab   #8b91ab
 
 hide_edge_borders smart
 
