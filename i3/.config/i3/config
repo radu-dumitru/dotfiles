@@ -223,6 +223,9 @@ floating_maximum_size 800x600
 
 exec_always --no-startup-id feh --bg-scale ~/.config/i3/wallpaper.png
 
+bindsym Print exec --no-startup-id scrot -z ~/Pictures/screenshot.png
+bindsym --release Shift+Print exec --no-startup-id scrot -z -s ~/Pictures/screenshot.png
+
 # swap caps lock with tab
 exec --no-startup-id xmodmap -e "clear Lock"
 exec --no-startup-id xmodmap -e "keycode 66 = Tab ISO_Left_Tab Tab ISO_Left_Tab"
