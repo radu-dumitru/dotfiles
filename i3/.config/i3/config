@@ -215,7 +215,7 @@ for_window [all] title_window_icon on
 for_window [all] title_window_icon padding 3px
 
 # class                 border  backgr. text    indicator child_border
-client.focused          #8b91ab #8b91ab #ffffff #8b91ab   #8b91ab
+client.focused          #36394a #36394a #ffffff #8b91ab   #8b91ab
 
 hide_edge_borders smart
 
@@ -230,6 +230,6 @@ bindsym Print exec --no-startup-id scrot -z ~/Pictures/screenshot.png
 bindsym --release Shift+Print exec --no-startup-id scrot -z -s ~/Pictures/screenshot.png
 
 # swap caps lock with tab
-exec --no-startup-id xmodmap -e "clear Lock"
-exec --no-startup-id xmodmap -e "keycode 66 = Tab ISO_Left_Tab Tab ISO_Left_Tab"
-exec --no-startup-id xmodmap -e "keycode 23 = Caps_Lock NoSymbol Caps_Lock"
+#exec --no-startup-id xmodmap -e "clear Lock"
+#exec --no-startup-id xmodmap -e "keycode 66 = Tab ISO_Left_Tab Tab ISO_Left_Tab"
+#exec --no-startup-id xmodmap -e "keycode 23 = Caps_Lock NoSymbol Caps_Lock"
